@@ -1,7 +1,52 @@
+# Micro-Frontend Module Federation (Webpack 5) - based on Angular shell
 
+[![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+[![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
 
-# MicroFrontendModuleFederation
+## Description
+This project based on Webpack 5 (Module Federation Plugin), implementing micro-frontend approach.
 
+* [How to build a micro-frontends architecture, with Angular and Webpack Module Federation](https://medium.com/agorapulse-stories/building-a-micro-frontends-architecture-in-2021-with-angular-and-webpack-module-federation-50d073617645)
+* [Micro-frontend example project from github](https://github.com/benorama/mfe-advanced-demo)
+* [Multi Framework(version) Micro Frontends with Module Federation and Web Components](https://github.com/manfredsteyer/multi-framework-micro-frontend)
+
+## Structure
+* `apps` - Micro-apps & e2e tests
+* `deploy` - Deploy configuration files
+
+## Stack
+* [Angular](https://angular.io/)
+  * [TypeScript](https://www.typescriptlang.org/)
+  * [SCSS](https://sass-lang.com/)
+* [Jest](https://jestjs.io/ru/docs/getting-started)
+* [Cypress](https://docs.cypress.io/)
+* [Nx](https://nx.dev/)
+* [Webpack 5 (Module Federation)](https://webpack.js.org/concepts/module-federation/)
+
+## Install
+Run command `yarn`
+
+## Run
+* Apps `yarn start`
+* **Micro-apps:**
+
+| Apps                    | Port | Command                              |
+| ------------------------| ---- | ------------------------------------ |
+| Shell                   | 4200 | `yarn start-shell`                   |
+| Home                    | 4201 | `yarn start-home`                    |
+| News                    | 4202 | `yarn start-news`                    |
+
+## Build
+TODO
+
+## Deploy
+TODO
+
+## Style guides
+
+- [**Angular Style Guide**](https://angular.io/guide/styleguide) - Looking for an opinionated guide to Angular syntax, conventions, and application structure? Step right in! This style guide presents preferred conventions and, as importantly, explains why.
+
+## Nx
 This project was generated using [Nx](https://nx.dev).
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>

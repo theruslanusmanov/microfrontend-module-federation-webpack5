@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'micro-frontend-module-federation-root',
+  selector: 'shell-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
