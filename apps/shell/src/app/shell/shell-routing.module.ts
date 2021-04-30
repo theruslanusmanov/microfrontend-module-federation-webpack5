@@ -10,7 +10,7 @@ const routes: Routes = [
     component: ShellComponent,
     children: [
       {
-        path: '',
+        path: 'home',
         loadChildren: () => loadRemoteModule({
           remoteEntry: environment.localRoutes
             ? 'http://localhost:4201/homeRemoteEntry.js'
@@ -33,6 +33,7 @@ const routes: Routes = [
           .then(m => m.NewsModule)
           .catch(() => import('./modules/empty/empty.module').then((m) => m.EmptyModule))
       },
+      { path: '',   redirectTo: '/home', pathMatch: 'full' }
     ]
   }
 ];
